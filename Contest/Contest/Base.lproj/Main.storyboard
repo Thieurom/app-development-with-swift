@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Contest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email address to join the contest" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oj-Ba-sbj">
+                                <rect key="frame" x="36" y="232.5" width="303" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FVg-a9-Fra">
+                                <rect key="frame" x="16" y="293.5" width="343" height="80"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o26-Wb-Axw">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="JX7-Fz-wRY"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhX-r7-Qe7">
+                                        <rect key="frame" x="0.0" y="44" width="343" height="36"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="Dp1-sM-2jY"/>
+                                        </constraints>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YwI-h3-TN4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.80000000000000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FVg-a9-Fra" firstAttribute="top" secondItem="2oj-Ba-sbj" secondAttribute="bottom" constant="20" id="1ZH-yW-aaO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FVg-a9-Fra" secondAttribute="trailing" id="Odx-Rr-WFD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2oj-Ba-sbj" secondAttribute="trailing" constant="20" id="PeG-IR-mch"/>
+                            <constraint firstItem="2oj-Ba-sbj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Rrv-8n-KLS"/>
+                            <constraint firstItem="FVg-a9-Fra" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WKj-Jc-MMF"/>
+                            <constraint firstItem="FVg-a9-Fra" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XUf-2w-WNM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="o26-Wb-Axw" id="Vpv-4p-pZR"/>
+                        <segue destination="djk-gy-Jvc" kind="show" identifier="ToContest" id="Mlf-WF-k0M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0MM-pd-22Z">
+            <objects>
+                <viewController id="djk-gy-Jvc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e1o-mF-AZn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the contest!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqd-zN-LIi">
+                                <rect key="frame" x="16" y="321.5" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cqd-zN-LIi" firstAttribute="trailing" secondItem="e1o-mF-AZn" secondAttribute="trailingMargin" id="2Mr-eh-qtb"/>
+                            <constraint firstItem="cqd-zN-LIi" firstAttribute="leading" secondItem="e1o-mF-AZn" secondAttribute="leadingMargin" id="HQl-Ah-j9t"/>
+                            <constraint firstItem="cqd-zN-LIi" firstAttribute="centerY" secondItem="e1o-mF-AZn" secondAttribute="centerY" id="rxr-Ns-ADm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QBw-OP-g7M"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jA6-De-zpo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="118"/>
+        </scene>
+    </scenes>
+</document>
