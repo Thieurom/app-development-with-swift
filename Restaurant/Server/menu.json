@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Spaghetti and Meatballs",
+    "description": "Seasoned meatballs on top of freshly-made spaghetti. Served with a robust tomato sauce.",
+    "price": 9.0,
+    "category": "entrees",
+    "image_url": "http://localhost:8090/images/spaghetti_meatballs.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Margherita Pizza",
+    "description": "Tomato sauce, fresh mozzarella, basil, and extra-virgin olive oil.",
+    "price": 10.0,
+    "category": "entrees",
+    "image_url": "http://localhost:8090/images/margherita_pizza.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Grilled Steelhead Trout Sandwich",
+    "description": "Pacific steelhead trout* with lettuce, tomato, and red onion.",
+    "price": 9.0,
+    "category": "entrees",
+    "image_url": "http://localhost:8090/images/grilled_steelhead.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pesto Linguini",
+    "description": "Stewed sliced beef with yellow onions and garlic in a vinegar-soy sauce. Served with steamed jasmine rice and sautéed vegetables.",
+    "price": 9.0,
+    "category": "entrees",
+    "image_url": "http://localhost:8090/images/pesto_linguini.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Chicken Noodle Soup",
+    "description": "Delicious chicken simmered alongside yellow onions, carrots, celery, and bay leaves, chicken stock.",
+    "price": 3.0,
+    "category": "appetizers",
+    "image_url": "http://localhost:8090/images/chicken_noodle_soup.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Italian Salad",
+    "description": "Garlic, red onions, tomatoes, mushrooms, and olives on top of romaine lettuce.",
+    "price": 5.0,
+    "category": "appetizers",
+    "image_url": "http://localhost:8090/images/italian_salad.jpeg"
+  }
+]
